@@ -1,0 +1,39 @@
+# Web Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# PDF Processing
+PyPDF2==3.0.1
+pdfplumber==0.10.3
+pymupdf>=1.24.0
+
+# Text Processing
+nltk>=3.8.1
+spacy>=3.8.0
+sentence-transformers>=2.3.1
+
+# LLM Integration
+groq==0.4.2
+mistralai==0.1.8
+together==0.2.7
+openai==1.12.0
+
+# Utilities
+python-dotenv==1.0.0
+numpy==1.26.3
+scikit-learn==1.4.0
+rank-bm25==0.2.2
+
+# Data handling
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# HTTP
+httpx==0.26.0
+aiofiles==23.2.1
+requests==2.31.0
+
+# Additional
+tqdm==4.66.1
+regex==2023.12.25
