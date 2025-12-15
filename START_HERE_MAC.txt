@@ -1,0 +1,85 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║    🍎  AGENTIC RAG SYSTEM - MAC SETUP COMPLETE!  🍎             ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+✅ Everything is installed and ready to run!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 TO START THE APPLICATION:
+
+Option 1 - EASIEST (One Command):
+    cd /Users/sainani/Downloads/agentic_rag_implementation
+    ./run_mac.sh
+
+Option 2 - Manual:
+    Terminal 1: ollama serve
+    Terminal 2: cd /Users/sainani/Downloads/agentic_rag_implementation
+                source .venv/bin/activate
+                .venv/bin/python -m app.main
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌐 ACCESS THE SYSTEM:
+
+    Web Interface:  http://localhost:8000
+    API Docs:       http://localhost:8000/docs
+    Health Check:   http://localhost:8000/api/health
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 QUICK TEST:
+
+    1. Make sure Ollama is running: ollama serve
+    2. Start the app (use one of the options above)
+    3. Open http://localhost:8000 in your browser
+    4. Upload the Resume_in.pdf file
+    5. Ask: "What is the candidate's education?"
+    6. See the magic happen! ✨
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ WHAT'S ALREADY DONE:
+
+    ✓ Python 3.13.7 environment ready
+    ✓ Virtual environment created (.venv/)
+    ✓ All dependencies installed (50+ packages)
+    ✓ NLTK data downloaded
+    ✓ Ollama models ready (mistral + nomic-embed-text)
+    ✓ Configuration file ready (.env)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 DOCUMENTATION:
+
+    Quick Start:     MAC_QUICKSTART.md
+    Full Setup:      SETUP_MAC.md
+    Complete Guide:  README.md
+    Architecture:    TASK3_IMPLEMENTATION.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🛑 TO STOP:
+
+    Press Ctrl+C in the terminal where the server is running
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 NEED HELP?
+
+    Check if Ollama is running:
+        curl http://localhost:11434/api/tags
+
+    List Ollama models:
+        ollama list
+
+    View logs:
+        tail -f the terminal output
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 ENJOY YOUR 100% LOCAL RAG SYSTEM! 🎉
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
