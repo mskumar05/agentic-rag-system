@@ -4,11 +4,11 @@
 ║                                                                   ║
 ╚═══════════════════════════════════════════════════════════════════╝
 
-✅ Everything is installed and ready to run!
+[+] Everything is installed and ready to run!
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-🚀 TO START THE APPLICATION:
+ TO START THE APPLICATION:
 
 Option 1 - EASIEST (One Command):
     cd /Users/sainani/Downloads/agentic_rag_implementation
@@ -30,7 +30,7 @@ Option 2 - Manual:
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📝 QUICK TEST:
+ QUICK TEST:
 
     1. Make sure Ollama is running: ollama serve
     2. Start the app (use one of the options above)
@@ -41,14 +41,14 @@ Option 2 - Manual:
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-✅ WHAT'S ALREADY DONE:
+[+] WHAT'S ALREADY DONE:
 
-    ✓ Python 3.13.7 environment ready
-    ✓ Virtual environment created (.venv/)
-    ✓ All dependencies installed (50+ packages)
-    ✓ NLTK data downloaded
-    ✓ Ollama models ready (mistral + nomic-embed-text)
-    ✓ Configuration file ready (.env)
+    OK Python 3.13.7 environment ready
+    OK Virtual environment created (.venv/)
+    OK All dependencies installed (50+ packages)
+    OK NLTK data downloaded
+    OK Ollama models ready (mistral + nomic-embed-text)
+    OK Configuration file ready (.env)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 

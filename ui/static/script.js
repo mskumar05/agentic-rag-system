@@ -200,13 +200,13 @@ class AgenticRAGUI {
             const chatContainer = document.getElementById('chat-container');
             chatContainer.innerHTML = `
                 <div class="welcome-message">
-                    <h2>👋 Welcome to Agentic RAG</h2>
+                    <h2>Welcome to Agentic RAG</h2>
                     <p>Upload PDF documents and ask questions. The system will:</p>
                     <ul>
-                        <li>🔍 Search your documents intelligently</li>
-                        <li>🧠 Reason through complex queries</li>
-                        <li>📚 Provide citations and evidence</li>
-                        <li>✅ Verify answers for accuracy</li>
+                        <li>Search your documents intelligently</li>
+                        <li>Reason through complex queries</li>
+                        <li>Provide citations and evidence</li>
+                        <li>Verify answers for accuracy</li>
                     </ul>
                     <p class="hint">Start by uploading some PDF documents!</p>
                 </div>
@@ -320,7 +320,7 @@ class AgenticRAGUI {
 
         // Add warning if present
         if (result.warning) {
-            html += `<div class="warning-badge">⚠️ ${this.escapeHtml(result.warning)}</div>`;
+            html += `<div class="warning-badge">WARNING: ${this.escapeHtml(result.warning)}</div>`;
         }
 
         // Add citations if present

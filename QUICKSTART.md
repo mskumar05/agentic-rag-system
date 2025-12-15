@@ -1,4 +1,4 @@
-# 🚀 Quick Start Guide
+#  Quick Start Guide
 
 Get the Agentic RAG system running in 5 minutes!
 
@@ -155,14 +155,14 @@ uvicorn app.main:app --reload --port 8001
 ## Features Checklist
 
 Test all features:
-- ✅ Upload multiple PDFs
-- ✅ View document statistics
-- ✅ Ask questions and get answers
-- ✅ See citations with page numbers
-- ✅ View reasoning steps
-- ✅ Adjust retrieval settings
-- ✅ Clear documents
-- ✅ Try greetings (should respond without searching)
+- [+] Upload multiple PDFs
+- [+] View document statistics
+- [+] Ask questions and get answers
+- [+] See citations with page numbers
+- [+] View reasoning steps
+- [+] Adjust retrieval settings
+- [+] Clear documents
+- [+] Try greetings (should respond without searching)
 
 ## What's Happening Behind the Scenes?
 

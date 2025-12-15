@@ -1,4 +1,4 @@
-# 🤖 Agentic RAG System
+#  Agentic RAG System
 
 An advanced Retrieval-Augmented Generation (RAG) system with agentic reasoning capabilities, built with FastAPI and powered by Groq LLM.
 
@@ -90,31 +90,31 @@ The system uses a **ReAct-style reasoning loop** where it:
 ## ✨ Key Features
 
 ### Core Functionality
-- ✅ **PDF Ingestion**: Multi-PDF upload with robust text extraction
-- ✅ **Smart Chunking**: Context-aware text segmentation with overlap
-- ✅ **Intent Detection**: Filters non-questions (greetings, chitchat)
-- ✅ **Query Transformation**: Expands abbreviations, improves retrieval
-- ✅ **Hybrid Search**: Combines semantic (vectors) + keyword (BM25)
-- ✅ **Re-ranking**: Cross-encoder style scoring with diversity
-- ✅ **Agentic Reasoning**: ReAct-style multi-step reasoning
-- ✅ **LLM Generation**: Context-aware answer generation
+- [+] **PDF Ingestion**: Multi-PDF upload with robust text extraction
+- [+] **Smart Chunking**: Context-aware text segmentation with overlap
+- [+] **Intent Detection**: Filters non-questions (greetings, chitchat)
+- [+] **Query Transformation**: Expands abbreviations, improves retrieval
+- [+] **Hybrid Search**: Combines semantic (vectors) + keyword (BM25)
+- [+] **Re-ranking**: Cross-encoder style scoring with diversity
+- [+] **Agentic Reasoning**: ReAct-style multi-step reasoning
+- [+] **LLM Generation**: Context-aware answer generation
 
 ### Bonus Features (All Implemented!)
-- ✅ **Citations Required**: Refuses to answer if similarity < threshold
-- ✅ **Answer Shaping**: Template selection based on query intent
-- ✅ **Hallucination Filters**: Post-hoc evidence checking
-- ✅ **Query Refusal**: Intent-based filtering (PII detection ready)
-- ✅ **No External Vector DB**: Custom numpy-based vector store
-- ✅ **No External RAG Libraries**: All components built from scratch
+- [+] **Citations Required**: Refuses to answer if similarity < threshold
+- [+] **Answer Shaping**: Template selection based on query intent
+- [+] **Hallucination Filters**: Post-hoc evidence checking
+- [+] **Query Refusal**: Intent-based filtering (PII detection ready)
+- [+] **No External Vector DB**: Custom numpy-based vector store
+- [+] **No External RAG Libraries**: All components built from scratch
 
 ### Technical Excellence
-- ✅ **No External Search Libraries**: Custom BM25 + vector similarity
-- ✅ **Structured Outputs**: Pydantic models for all data
-- ✅ **Confidence Scoring**: Multi-signal confidence calculation
-- ✅ **Reasoning Transparency**: Exposes agent decision-making
-- ✅ **Modern UI**: Dark-themed, responsive chat interface
+- [+] **No External Search Libraries**: Custom BM25 + vector similarity
+- [+] **Structured Outputs**: Pydantic models for all data
+- [+] **Confidence Scoring**: Multi-signal confidence calculation
+- [+] **Reasoning Transparency**: Exposes agent decision-making
+- [+] **Modern UI**: Dark-themed, responsive chat interface
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 - Python 3.9+
@@ -480,22 +480,22 @@ else:
 ### Trade-offs
 
 **Custom Vector Store**:
-- ✅ No external dependencies
-- ✅ Simple deployment
-- ❌ Limited scalability (best for < 1M chunks)
-- ❌ No distributed search
+- [+] No external dependencies
+- [+] Simple deployment
+- [-] Limited scalability (best for < 1M chunks)
+- [-] No distributed search
 
 **In-Memory Processing**:
-- ✅ Fast retrieval
-- ✅ Simple implementation
-- ❌ Requires sufficient RAM
-- ❌ Not suitable for very large datasets
+- [+] Fast retrieval
+- [+] Simple implementation
+- [-] Requires sufficient RAM
+- [-] Not suitable for very large datasets
 
 **BM25 Implementation**:
-- ✅ No external search engine
-- ✅ Proven algorithm
-- ❌ Rebuilt on each index update
-- ❌ No advanced query syntax
+- [+] No external search engine
+- [+] Proven algorithm
+- [-] Rebuilt on each index update
+- [-] No advanced query syntax
 
 ## 📁 Project Structure
 
@@ -587,4 +587,4 @@ Built as a technical assessment demonstrating:
 
 **Tech Stack**: FastAPI • Python • Groq • Sentence Transformers • Custom Vector Store • React-style UI
 
-**Key Achievement**: ✅ All requirements + all bonus features implemented without external RAG/search libraries
+**Key Achievement**: [+] All requirements + all bonus features implemented without external RAG/search libraries

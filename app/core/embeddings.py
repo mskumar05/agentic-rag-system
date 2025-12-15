@@ -41,7 +41,7 @@ class EmbeddingGenerator:
         try:
             response = requests.get(f"{self.base_url}/api/tags", timeout=5)
             response.raise_for_status()
-            logger.info(f"✓ Connected to Ollama at {self.base_url}")
+            logger.info(f"OK Connected to Ollama at {self.base_url}")
         except Exception as e:
             logger.warning(f"Cannot connect to Ollama at {self.base_url}: {e}")
             logger.warning("Make sure Ollama is running: ollama serve")
@@ -51,7 +51,7 @@ class EmbeddingGenerator:
         try:
             test_embedding = self._embed_ollama_single("test")
             self.dimension = len(test_embedding)
-            logger.info(f"✓ Ollama embeddings initialized with model: {self.model_name}")
+            logger.info(f"OK Ollama embeddings initialized with model: {self.model_name}")
             logger.info(f"  Embedding dimension: {self.dimension}")
         except Exception as e:
             logger.warning(f"Could not determine embedding dimension: {e}")
@@ -72,7 +72,7 @@ class EmbeddingGenerator:
         self.model = SentenceTransformer(self.model_name)
         self.dimension = self.model.get_sentence_embedding_dimension()
 
-        logger.info(f"✓ Embeddings loaded successfully")
+        logger.info(f"OK Embeddings loaded successfully")
         logger.info(f"  Embedding dimension: {self.dimension}")
 
     def embed_text(self, text: str) -> np.ndarray:
@@ -128,7 +128,7 @@ class EmbeddingGenerator:
             embeddings.append(embedding)
 
         result = np.array(embeddings, dtype=np.float32)
-        logger.info(f"✓ Generated {len(embeddings)} embeddings")
+        logger.info(f"OK Generated {len(embeddings)} embeddings")
         return result
 
     def _embed_st_single(self, text: str) -> np.ndarray:
@@ -156,7 +156,7 @@ class EmbeddingGenerator:
             show_progress_bar=True
         )
 
-        logger.info(f"✓ Generated {len(embeddings)} embeddings")
+        logger.info(f"OK Generated {len(embeddings)} embeddings")
         return embeddings
 
     def cosine_similarity(self, vec1: np.ndarray, vec2: np.ndarray) -> float:

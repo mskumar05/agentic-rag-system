@@ -51,13 +51,13 @@ class QueryRefusalPolicy:
 
         # Disclaimer templates
         self.legal_disclaimer = (
-            "\n\n⚠️ **Legal Disclaimer**: This response is for informational purposes only "
+            "\n\n**Legal Disclaimer**: This response is for informational purposes only "
             "and does not constitute legal advice. Consult a qualified attorney for "
             "legal matters specific to your situation."
         )
 
         self.medical_disclaimer = (
-            "\n\n⚠️ **Medical Disclaimer**: This response is for informational purposes only "
+            "\n\n**Medical Disclaimer**: This response is for informational purposes only "
             "and does not constitute medical advice. Consult a qualified healthcare "
             "provider for medical concerns or before making health-related decisions."
         )
@@ -315,7 +315,7 @@ Respond ONLY with the JSON object, nothing else."""
         contains_pii, pii_type = self.check_pii_regex(query)
         if contains_pii:
             message = (
-                f"⚠️ Your query contains personal information ({pii_type}). "
+                f"WARNING: Your query contains personal information ({pii_type}). "
                 "For your privacy and security, please remove any personal information "
                 "such as emails, phone numbers, SSN, or addresses before submitting your query."
             )
@@ -325,7 +325,7 @@ Respond ONLY with the JSON object, nothing else."""
         is_pii_request, pii_type = self.check_pii_request_llm(query)
         if is_pii_request:
             message = (
-                f"⚠️ Your query appears to be requesting personal identifiable information ({pii_type}). "
+                f"WARNING: Your query appears to be requesting personal identifiable information ({pii_type}). "
                 "For privacy and security reasons, I cannot provide sensitive personal information "
                 "such as Social Security Numbers, phone numbers, email addresses, or physical addresses. "
                 "Please ask about non-sensitive information instead."
