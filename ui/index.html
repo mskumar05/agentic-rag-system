@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic RAG System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>🤖 Agentic RAG System</h1>
+                <p class="subtitle">Intelligent Document Q&A with Reasoning</p>
+            </div>
+            <div class="stats-bar">
+                <div class="stat" id="doc-count">
+                    <span class="stat-label">Documents:</span>
+                    <span class="stat-value" id="stat-docs">0</span>
+                </div>
+                <div class="stat" id="chunk-count">
+                    <span class="stat-label">Chunks:</span>
+                    <span class="stat-value" id="stat-chunks">0</span>
+                </div>
+                <div class="stat-indicator" id="status-indicator">
+                    <span class="status-dot"></span>
+                    <span id="status-text">Ready</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="upload-section">
+                    <h2>📄 Upload Documents</h2>
+                    <div class="upload-area" id="upload-area">
+                        <input type="file" id="file-input" accept=".pdf" multiple hidden>
+                        <div class="upload-prompt">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="17 8 12 3 7 8"></polyline>
+                                <line x1="12" y1="3" x2="12" y2="15"></line>
+                            </svg>
+                            <p>Click to upload or drag & drop PDF files</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="upload-btn">Upload PDFs</button>
+                    <div id="upload-progress" class="upload-progress hidden">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <p id="progress-text">Uploading...</p>
+                    </div>
+                </div>
+
+                <div class="documents-section">
+                    <h3>Uploaded Documents</h3>
+                    <div id="document-list" class="document-list">
+                        <p class="empty-state">No documents uploaded yet</p>
+                    </div>
+                    <button class="btn btn-secondary btn-small" id="clear-btn">Clear All</button>
+                </div>
+
+                <div class="settings-section">
+                    <h3>⚙️ Settings</h3>
+                    <div class="setting">
+                        <label for="top-k">Results to retrieve:</label>
+                        <input type="number" id="top-k" min="1" max="10" value="5">
+                    </div>
+                    <div class="setting">
+                        <label>
+                            <input type="checkbox" id="citations-toggle" checked>
+                            Show citations
+                        </label>
+                    </div>
+                    <div class="setting">
+                        <label>
+                            <input type="checkbox" id="reasoning-toggle">
+                            Show reasoning steps
+                        </label>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Chat Area -->
+            <main class="chat-area">
+                <div class="chat-container" id="chat-container">
+                    <div class="welcome-message">
+                        <h2>👋 Welcome to Agentic RAG</h2>
+                        <p>Upload PDF documents and ask questions. The system will:</p>
+                        <ul>
+                            <li>🔍 Search your documents intelligently</li>
+                            <li>🧠 Reason through complex queries</li>
+                            <li>📚 Provide citations and evidence</li>
+                            <li>✅ Verify answers for accuracy</li>
+                        </ul>
+                        <p class="hint">Start by uploading some PDF documents!</p>
+                    </div>
+                </div>
+
+                <div class="input-area">
+                    <div class="input-container">
+                        <textarea
+                            id="user-input"
+                            placeholder="Ask a question about your documents..."
+                            rows="1"
+                        ></textarea>
+                        <button id="send-btn" class="send-btn" disabled>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
